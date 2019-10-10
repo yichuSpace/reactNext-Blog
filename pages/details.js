@@ -63,9 +63,8 @@ const Detailed = () => {
 
             <div>
               <div className="detailed-title">
-                React实战视频教程-技术胖Blog开发(更新08集)
-                </div>
-
+                标题
+              </div>
               <div className="list-icon center">
                 <span><Icon type="calendar" /> 2019-06-28</span>
                 <span><Icon type="folder" /> 视频教程</span>
@@ -73,25 +72,18 @@ const Detailed = () => {
               </div>
 
               <div className="detailed-content" >
-                <ReactMarkdown
-                  source={markdown}
-                  escapeHtml={false}
-                />
+                <ReactMarkdown source={markdown} escapeHtml={false} />
               </div>
-
             </div>
-
           </div>
         </Col>
 
         <Col className="comm-right" xs={0} sm={0} md={7} lg={5} xl={4}>
           <Author />
           <Advert />
-
         </Col>
       </Row>
       <Footer />
-
     </>
   )
 

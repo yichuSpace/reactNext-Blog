@@ -1,5 +1,5 @@
 import React from 'react'
-import '../style/components/header.css'
+import '../style/components/header.less'
 import { Row, Col, Menu, Icon } from 'antd'
 
 const Header = () => (

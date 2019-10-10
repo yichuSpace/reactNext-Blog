@@ -1,4 +1,4 @@
-import '../style/components/advert.css'
+import '../style/components/advert.less'
 
 const Advert = () => {
   return (
