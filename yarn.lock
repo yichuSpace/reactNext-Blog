@@ -1999,7 +1999,7 @@ core-js@^1.0.0:
   resolved "https://registry.yarnpkg.com/core-js/-/core-js-1.2.7.tgz#652294c14651db28fa93bd2d5ff2983a4f08c636"
   integrity sha1-ZSKUwUZR2yj6k70tX/KYOk8IxjY=
 
-core-js@^2.4.0, core-js@^2.6.5:
+core-js@^2.4.0, core-js@^2.5.3, core-js@^2.6.5:
   version "2.6.9"
   resolved "https://registry.yarnpkg.com/core-js/-/core-js-2.6.9.tgz#6b4b214620c834152e179323727fc19741b084f2"
   integrity sha512-HOpZf6eXmnl7la+cUdMnLvUxKNqLUzJvgIziQ0DiF3JwSImNphIqdGqzj6hIKyX04MmV0poclQ7+wjWvxQyR2A==
@@ -3814,6 +3814,15 @@ markdown-escapes@^1.0.0:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/markdown-escapes/-/markdown-escapes-1.0.3.tgz#6155e10416efaafab665d466ce598216375195f5"
   integrity sha512-XUi5HJhhV5R74k8/0H2oCbCiYf/u4cO/rX8tnGkRvrqhsr5BRNU6Mg0yt/8UIx1iIS8220BNJsDb7XnILhLepw==
+
+markdown-navbar@^1.0.7:
+  version "1.0.7"
+  resolved "https://registry.yarnpkg.com/markdown-navbar/-/markdown-navbar-1.0.7.tgz#da3dac0f0c83dd62858ee36f2ae35e2c8eca834e"
+  integrity sha512-+cYPOkwuF4xdyvNRRjB/DDDO8tNhxLhFmTQwAP3Xfh8XYKqPZLaBIMkO4DgtCKQ4tSA6Zu1Yjfu/jBkkP49IyQ==
+  dependencies:
+    core-js "^2.5.3"
+    prop-types "^15.6.0"
+    react "^16.2.0"
 
 md5.js@^1.3.4:
   version "1.3.5"
@@ -5785,7 +5794,7 @@ react-slick@~0.25.2:
     lodash.debounce "^4.0.8"
     resize-observer-polyfill "^1.5.0"
 
-react@16.10.2:
+react@16.10.2, react@^16.2.0:
   version "16.10.2"
   resolved "https://registry.yarnpkg.com/react/-/react-16.10.2.tgz#a5ede5cdd5c536f745173c8da47bda64797a4cf0"
   integrity sha512-MFVIq0DpIhrHFyqLU0S3+4dIcBhhOvBE8bJ/5kHPVOVaGdo0KuiQzpcjCPsf585WvhypqtrMILyoE2th6dT+Lw==

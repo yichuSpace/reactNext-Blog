@@ -5,9 +5,8 @@ import Header from '../components/Header'
 import Author from '../components/Author'
 import Advert from '../components/Advert'
 import Footer from '../components/Footer'
-import '../style/pages/listDetails.css'
 
-
+import '../style/pages/listDetails.less'
 
 const ListDetails = () => {
 

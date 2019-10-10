@@ -7,7 +7,7 @@ import Author from '../components/Author'
 import Advert from '../components/Advert'
 import Footer from '../components/Footer'
 
-import '../style/pages/index.css'
+import '../style/pages/index.less'
 
 
 const Home = () => {
