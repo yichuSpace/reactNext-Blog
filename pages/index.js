@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import Head from 'next/head'
-import { Row, Col, List, Icon } from 'antd'
+import { Row, Col, List, Icon, Pagination } from 'antd'
 
 import Header from '../components/Header'
 import Author from '../components/Author'
@@ -19,6 +19,9 @@ const Home = () => {
       { title: 'React Hooks 免费视频教程(共11集)', context: '5因为这是知识星球允许的最低收费了。' },
     ]
   )
+  // onShowSizeChange(current, pageSize) {
+  //   console.log(current, pageSize);
+  // }
   return (
     <>
       <div>
@@ -46,8 +49,16 @@ const Home = () => {
                 </List.Item>
               )}
             />
-          </div>
 
+          </div>
+          <div className="flex-center">
+            <Pagination
+              showSizeChanger
+              // onShowSizeChange={onShowSizeChange}
+              defaultCurrent={3}
+              total={500}
+            />
+          </div>
         </Col>
 
         <Col className="comm-right" xs={0} sm={0} md={7} lg={5} xl={4}>

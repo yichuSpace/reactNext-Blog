@@ -25,7 +25,7 @@ const Header = () => {
             </Menu.Item>
             <Menu.Item key="life">
               <Icon type="smile" />
-              <span>生活</span>
+              <span>关于</span>
             </Menu.Item>
           </Menu>
         </Col>

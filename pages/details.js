@@ -58,7 +58,7 @@ const Detailed = () => {
           <div>
             <div className="bread-div">
               <Breadcrumb>
-                <Breadcrumb.Item><a href="/">首页</a></Breadcrumb.Item>
+                <Breadcrumb.Item href="/"> <Icon type="home" />首页</Breadcrumb.Item>
                 <Breadcrumb.Item>视频列表</Breadcrumb.Item>
                 <Breadcrumb.Item>xxxx</Breadcrumb.Item>
               </Breadcrumb>
