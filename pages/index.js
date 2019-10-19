@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import Head from 'next/head'
 import { Row, Col, List, Icon, Pagination } from 'antd'
-
+import axios from 'axios'
 import Header from '../components/Header'
 import Author from '../components/Author'
 import Advert from '../components/Advert'
@@ -10,15 +10,11 @@ import Footer from '../components/Footer'
 import '../style/pages/index.less'
 
 
-const Home = () => {
-  const [mylist, setMylist] = useState(
-    [
-      { title: '50元加入小密圈 胖哥带你学一年', context: '因为这是知识星球允许的最低收费了。' },
-      { title: 'React实战视频教程-技术胖Blog开发(更新04集)', context: '？因为这是知识星球允许的最低收费了。' },
-      { title: 'React服务端渲染框架Next.js入门(共12集)', context: '因为这是知识星球允许的最低收费了。' },
-      { title: 'React Hooks 免费视频教程(共11集)', context: '5因为这是知识星球允许的最低收费了。' },
-    ]
+const Home = (list) => {
+  console.log(list);
+  const [mylist, setMylist] = useState([list.data[0]]
   )
+  console.log(mylist);
   // onShowSizeChange(current, pageSize) {
   //   console.log(current, pageSize);
   // }
@@ -45,7 +41,7 @@ const Home = () => {
                     <span><Icon type="folder" /> 视频教程</span>
                     <span><Icon type="fire" /> 5498人</span>
                   </div>
-                  <div className="list-context">{item.context}</div>
+                  <div className="list-context">{item.content}</div>
                 </List.Item>
               )}
             />
@@ -70,5 +66,16 @@ const Home = () => {
     </>
   )
 }
+Home.getInitialProps = async () => {
+  const promise = new Promise((resolve) => {
+    axios('http://127.0.0.1:7001/default/getArticleList').then(
+      (res) => {
+        console.log('远程获取数据结果:', res.data.data)
+        resolve(res.data)
+      }
+    )
+  })
 
+  return await promise
+}
 export default Home
